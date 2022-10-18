@@ -2,11 +2,30 @@ package com.thales.model;
 
 public class Computer {
 	
-<<<<<<< HEAD
 	private int memory;
-=======
 	private String brand;
->>>>>>> c3490f22e7906bcfbf9a46982ca6957e6826bee7
 	private int processor;
+	
+	
+	public int getMemory() {
+		return memory;
+	}
+	public void setMemory(int memory) {
+		this.memory = memory;
+	}
+	public String getBrand() {
+		return brand;
+	}
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+	public int getProcessor() {
+		return processor;
+	}
+	public void setProcessor(int processor) {
+		this.processor = processor;
+	}
+	
+	
 	
 }
