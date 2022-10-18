@@ -6,6 +6,12 @@ public class Computer {
 	private String brand;
 	private int processor;
 	
+	public Computer(int memory, String brand, int processor) {
+		super();
+		this.memory = memory;
+		this.brand = brand;
+		this.processor = processor;
+	}
 	
 	public int getMemory() {
 		return memory;
