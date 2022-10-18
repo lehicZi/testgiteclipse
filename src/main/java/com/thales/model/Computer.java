@@ -31,7 +31,37 @@ public class Computer {
 	public void setProcessor(int processor) {
 		this.processor = processor;
 	}
-	
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((brand == null) ? 0 : brand.hashCode());
+		result = prime * result + memory;
+		result = prime * result + processor;
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Computer other = (Computer) obj;
+		if (brand == null) {
+			if (other.brand != null)
+				return false;
+		} else if (!brand.equals(other.brand))
+			return false;
+		if (memory != other.memory)
+			return false;
+		if (processor != other.processor)
+			return false;
+		return true;
+	}
 	
 	
 }
