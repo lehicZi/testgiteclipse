@@ -4,4 +4,6 @@ public class Computer {
 	
 	private int memory;
 
+	private int processor;
+	
 }
